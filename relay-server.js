@@ -3,7 +3,7 @@ const app = express();
 
 const GUN = require('gun')
 
-const port = 6100 || process.env.PORT;
+const port = (process.env.PORT || 6100);
 
 app.use(GUN.serve);
 
