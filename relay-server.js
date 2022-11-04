@@ -11,7 +11,7 @@ const { json } = require('express');
 
 const port = (process.env.PORT || 6100);
 
-const gunInstance = GUN({radisk: true, localStorage: true});
+const gunInstance = GUN();
 
 app.use(cors({
   origin: ["http://localhost:3000"],
