@@ -14,7 +14,7 @@ const port = (process.env.PORT || 6100);
 const gunInstance = GUN();
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "https://small-rice-3744.on.fleek.co/"],
   methods: ["GET", "POST"]
 }))
 
