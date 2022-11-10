@@ -5,8 +5,6 @@ const GUN = require('gun')
 
 const port = (process.env.PORT || 6100);
 
-const gunInstance = GUN();
-
 app.use(GUN.serve);
 
 app.get('/', (req, res) => {
